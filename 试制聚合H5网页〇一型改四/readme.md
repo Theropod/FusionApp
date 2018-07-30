@@ -5,5 +5,7 @@ It's quite simple, I only used some javascript to auto fill the login form, redi
 
 there's also a helper js file i used, which is  unnecessary for building.
 
+you can copy the project folder, or just import the fas file.
+
 ---
 Link to the [homepage](https://github.com/Theropod/FusionAPP-StartPage) for this app

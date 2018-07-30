@@ -7,6 +7,7 @@ This repository is just a brief example of what Fusion App can do, I only used a
 
 ---
 - grab the 'Fusion App' app from coolapk (Huge thanks to developer @寒歌)
-- copy project folder to /storage/emulated/0/FusionApp/
+- in Fusion App, import the fas file in project folder from right-top
+- Or you can copy project folder to /storage/emulated/0/FusionApp/, then add the mht file.
 - customize in Fusion App
 - build and install

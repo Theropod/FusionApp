@@ -1,4 +1,7 @@
-packagename="com.MyFusApp.Theropod.FusionH5"
+appcode="01"
+appver="0.4"
+template="tool"
+appname="试制聚合H5网页〇一型改四"
 user_permission={
   [1]	= "ACCESS_COARSE_LOCATION" ;
   [2]	= "ACCESS_FINE_LOCATION" ;
@@ -7,9 +10,4 @@ user_permission={
   [5]	= "INTERNET" ;
   [6]	= "WRITE_EXTERNAL_STORAGE" ;
   } ;
-appname="试制聚合H5网页〇一型改四"
-appcode="01"
-template="tool"
-appver="0.4"
-
---require "import" import"loadlayout" import"loadmenu" import"loadbitmap" 
+packagename="com.MyFusApp.Theropod.FusionH5"

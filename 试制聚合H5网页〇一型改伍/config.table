@@ -1,0 +1,169 @@
+{
+  ["global_js"]	= "" ;
+  ["web_control"]	= {
+      [1]	= {
+          ["remove_element"]	= "" ;
+          ["js"]	= "window.onload=function(){ \13\
+    document.getElementsByName('TPL_username')[0].value='your_username';\13\
+    document.getElementsByName('TPL_password')[0].value='your_password';\13\
+    } " ;
+          ["url"]	= "login.m.taobao.com" ;
+          } ;
+      [2]	= {
+          ["remove_element"]	= "" ;
+          ["js"]	= "if($('#loginBtn').hasClass('infoinserted')){}\13\
+else{\13\
+    var input_username=document.getElementById('username');\13\
+    input_username.value='your_username';\13\
+    CtoH(input_username);\13\
+    var input_password=document.getElementById('password');\13\
+    input_password.value='your_password';\13\
+    CtoH(input_password);\13\
+    $('#loginBtn').addClass('btn-active');\13\
+    $('#loginBtn').addClass('infoinserted');\13\
+}" ;
+          ["url"]	= "plogin.m.jd.com" ;
+          } ;
+      [3]	= {
+          ["remove_element"]	= "@ID(m_common_tip)" ;
+          ["js"]	= "" ;
+          ["url"]	= "m.jd.com" ;
+          } ;
+      [4]	= {
+          ["remove_element"]	= "@ID(content_02)" ;
+          ["js"]	= "" ;
+          ["url"]	= "pro.m.jd.com" ;
+          } ;
+      [5]	= {
+          ["remove_element"]	= "@ID(J_7714002273)" ;
+          ["js"]	= "" ;
+          ["url"]	= "m.intl.taobao.com" ;
+          } ;
+      [6]	= {
+          ["remove_element"]	= "" ;
+          ["js"]	= "var iframe=document.getElementById('iff');if(iframe.classList.contains(\"changed\")){}else{    iframe.contentWindow.document.getElementById('name').value='your_username';    iframe.contentWindow.document.getElementById('password').value='your_password';    var loginbtn=iframe.contentWindow.document.getElementById('main').children[0].children[9];    loginbtn._on();    iframe.classList.add(\"changed\");}if(iframe.style.display=='none'){ \
+alert('jumping');\
+window.location.href = \"https://bbs.ngacn.cc\";}\
+$('body').children().filter(function() {\13\
+    var thisZ = $(this).css('z-index');\13\
+    return parseInt(thisZ) == 6;\13\
+}).each(function() {\13\
+    $(this).css(\"display\",\"none\"); \13\
+});" ;
+          ["url"]	= "bbs.ngacn.cc" ;
+          } ;
+      [7]	= {
+          ["remove_element"]	= "" ;
+          ["js"]	= "window.onload=function(){\
+ document.getElementById('login_id').value='your_email';\13\
+  this.document.getElementById('password').value='your_password';\
+\
+document.getElementById('login_id').click();\13\
+}" ;
+          ["url"]	= "ooi.moe" ;
+          } ;
+      } ;
+  ["fltBtn"]	= {
+      ["显示"]	= false ;
+      ["点击事件"]	= "--悬浮按钮点击时执行的事件" ;
+      ["图标"]	= "" ;
+      } ;
+  ["web"]	= {
+      ["浏览器用户标识"]	= "默认" ;
+      ["启用长按菜单"]	= true ;
+      ["支持打开外部应用"]	= false ;
+      ["网页沉浸"]	= true ;
+      ["启动网页"]	= "http://theropod.gitee.io/fusionapp-startpage/" ;
+      ["启用进度条"]	= true ;
+      } ;
+  ["events"]	= {
+      ["收到新标题"]	= "--浏览器加载新页面并获得新标题时执行的事件\
+\
+--接收参数\
+浏览器对象，新标题=..." ;
+      ["网页加载完毕"]	= "--网页加载完毕后执行的事件\
+\
+--接收参数\
+浏览器对象,网页链接=..." ;
+      ["程序启动"]	= "--程序启动时会执行的事件" ;
+      ["网页即将加载"]	= "--浏览器即将加载新的网页时执行的事件\
+\
+--接收参数\
+浏览器对象,网页链接=..." ;
+      } ;
+  ["sidebar"]	= {
+      ["启用顶部图片"]	= true ;
+      ["启用"]	= true ;
+      ["items"]	= {
+          [1]	= {
+              ["onClick"]	= "加载网页(\"http://theropod.gitee.io/fusionapp-startpage/\")" ;
+              ["name"]	= "home" ;
+              ["icon"]	= "drawable/home_variant.png" ;
+              } ;
+          [2]	= {
+              ["onClick"]	= "分享文本(webView.getUrl())" ;
+              ["name"]	= "share" ;
+              ["icon"]	= "drawable/share_variant.png" ;
+              } ;
+          [3]	= {
+              ["onClick"]	= "阅读模式()" ;
+              ["name"]	= "Readmode" ;
+              ["icon"]	= "drawable/book_open.png" ;
+              } ;
+          [4]	= {
+              ["onClick"]	= "加载网页(\"https://github.com/Theropod/FusionApp\")" ;
+              ["name"]	= "About" ;
+              ["icon"]	= "drawable/question_mark_circle.png" ;
+              } ;
+          [5]	= {
+              ["onClick"]	= "退出程序()" ;
+              ["name"]	= "exit" ;
+              ["icon"]	= "drawable/arrow_left_bold.png" ;
+              } ;
+          } ;
+      } ;
+  ["colors"]	= {
+      ["悬浮按钮"]	= "#ff33a7aa" ;
+      ["搜索栏背景"]	= "#ffffffff" ;
+      ["侧滑栏列表文字"]	= "#ff333333" ;
+      ["导航栏"]	= "#ff2c2e43" ;
+      ["进度条"]	= "#00000000" ;
+      ["搜索栏部件触摸"]	= "#44000000" ;
+      ["顶栏部件"]	= "#ffffffff" ;
+      ["侧滑栏列表图标"]	= "#ff757575" ;
+      ["搜索栏提示文字"]	= "#80000000" ;
+      ["悬浮按钮图标"]	= "#ffffffff" ;
+      ["搜索栏部件"]	= "#ff888888" ;
+      ["侧滑栏背景"]	= "#ffffffff" ;
+      ["顶栏部件触摸"]	= "#22ffffff" ;
+      ["顶栏"]	= "#ff2c2e43" ;
+      } ;
+  ["view_attribute"]	= {
+      ["搜索栏圆角弧度"]	= "2dp" ;
+      ["顶栏标题"]	= "试制聚合H5网页〇一型" ;
+      ["顶栏阴影强度"]	= "2dp" ;
+      ["搜索栏阴影强度"]	= "2dp" ;
+      ["顶栏高度"]	= "0dp" ;
+      ["侧滑栏宽度"]	= "240dp" ;
+      } ;
+  ["switch"]	= {
+      ["显示状态栏"]	= true ;
+      ["横屏"]	= false ;
+      ["支持滑动页面"]	= false ;
+      ["启用启动图"]	= false ;
+      } ;
+  ["toolbar"]	= {
+      ["menus"]	= {
+          [1]	= {
+              ["name"]	= "退出" ;
+              ["onClick"]	= "退出页面()" ;
+              } ;
+          } ;
+      ["搜索URL"]	= "" ;
+      ["输入栏模式"]	= true ;
+      ["搜索框提示"]	= "" ;
+      ["启用搜索功能"]	= false ;
+      ["icon_btns"]	= {
+          } ;
+      } ;
+  } ;

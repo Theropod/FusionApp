@@ -7,7 +7,7 @@ user_permission={
   [6]	= "WRITE_EXTERNAL_STORAGE" ;
   } ;
 template="tool"
-appcode="01"
-appname="试制聚合H5网页〇一型改五"
 appver="0.5"
 packagename="com.MyFusApp.Theropod.FusionH5"
+appname="试制聚合H5网页〇一型改伍"
+appcode="01"
